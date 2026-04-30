@@ -1,1 +1,138 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>إشرافي - نظام الإشراف التربوي</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Cairo', sans-serif;
+      background: linear-gradient(135deg, #f1f5f9, #e0f2fe);
+      color: #1e2937;
+      line-height: 1.7;
+    }
+    header {
+      background: linear-gradient(135deg, #1e40af, #3b82f6);
+      color: white;
+      padding: 20px 0;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    .nav {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+    .logo { font-size: 28px; font-weight: 700; }
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 30px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover { opacity: 0.8; }
 
+    .hero {
+      text-align: center;
+      padding: 120px 20px;
+      background: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&q=80') center/cover;
+      position: relative;
+      color: white;
+    }
+    .hero::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(30, 64, 175, 0.75);
+    }
+    .hero-content { position: relative; }
+    .hero h1 { font-size: 48px; margin-bottom: 20px; }
+    .hero p { font-size: 22px; margin-bottom: 30px; }
+
+    .btn {
+      padding: 16px 40px;
+      background: #eab308;
+      color: #1e2937;
+      border: none;
+      border-radius: 50px;
+      font-size: 18px;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn:hover { transform: scale(1.05); }
+
+    .section { max-width: 1200px; margin: 80px auto; padding: 0 20px; }
+    h2 { text-align: center; font-size: 32px; margin-bottom: 50px; color: #1e40af; }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+    }
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+    .card i { font-size: 48px; color: #3b82f6; margin-bottom: 20px; }
+
+    footer {
+      background: #1e2937;
+      color: #cbd5e1;
+      text-align: center;
+      padding: 40px;
+      margin-top: 80px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="nav">
+      <div class="logo">إشرافي</div>
+      <nav>
+        <ul>
+          <li><a href="#">الرئيسية</a></li>
+          <li><a href="#">تقاريري</a></li>
+          <li><a href="#">الزيارات</a></li>
+          <li><a href="#">المعلمون</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>نظام إشراف تربوي متكامل</h1>
+      <p>تابع الحصص • أنشئ تقارير احترافية • طور التعليم</p>
+      <a href="#" class="btn" onclick="alert('تم! الموقع جاهز للاستخدام')">ابدأ الآن</a>
+    </div>
+  </section>
+
+  <div class="section">
+    <h2>مميزات النظام</h2>
+    <div class="cards">
+      <div class="card"><i class="fas fa-file-alt"></i><h3>تقارير فورية</h3></div>
+      <div class="card"><i class="fas fa-chart-bar"></i><h3>إحصائيات</h3></div>
+      <div class="card"><i class="fas fa-users"></i><h3>إدارة المعلمين</h3></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 نظام إشرافي</p>
+  </footer>
+
+</body>
+</html>
